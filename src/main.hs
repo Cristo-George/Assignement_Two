@@ -2,7 +2,7 @@ main :: IO ()
 main = do
   let anodeVoltage = [2000, 2500, 3000, 3500, 4000]
   let firstRingDiameter = [0.071, 0.063, 0.058, 0.053, 0.050]
-  let V_Inverse = map (x-> x*-1)anodeVoltage
+  let vInverse = map (x-> x*-1)anodeVoltage
 
   putStrLn "Anode Voltage:"
   print anodeVoltage
@@ -10,5 +10,5 @@ main = do
   putStrLn "First Ring Diameter:"
   print firstRingDiameter
 
-  putStrLn "V_Inverse:"
-  print V_Inverse
+  putStrLn "vInverse:"
+  print vInverse
