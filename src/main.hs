@@ -5,7 +5,7 @@ main = do
   let vInverse = map (1 /) anodeVoltage -- Makes list 1/V
   let dSquare = map (\x -> x * x) firstRingDiameter -- Makes list D^2
   let dInverseSquare = map (1 /) dSquare
-  let gradient = zipWith (*) vInverse dInverseSquare
+  let gradient = ((last vInverse) - (head vInverse)) / ((last dSquare) - (head dSquare))
 
   putStrLn "Anode Voltage:"
   print anodeVoltage
