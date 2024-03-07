@@ -22,5 +22,5 @@ main = do
   print gradient
 
   let d = sqrt $ (2 * (0.18 ^ 2) * (6.63e-34 ^ 2)) / (9.11e-31 * 1.6e-19)
-  putStrLn "Carbon Spacing"
+  putStrLn "Carbon Atom Spacing"
   print d
